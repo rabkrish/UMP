@@ -1,0 +1,154 @@
+/* src/index.css */
+/* Tailwind CSS Customizations */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.dark-mode {
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+
+/* Slick Carousel */
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+.background-animate {
+  background: linear-gradient(270deg, #ff00cc, #333399);
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+}
+
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.slick-slide {
+  padding: 0 10px; /* Adjust padding as needed */
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* Add this to index.css or a specific CSS file for styling */
+.youtube-video {
+  width: 100%;
+  height: 315px; /* You can adjust the height based on your design needs */
+}
+
+.container {
+  padding: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.bg-gray-800 {
+  background-color: #2d3748;
+}
+.text-white {
+  color: #ffffff;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.w-full {
+  width: 100%;
+}
+.max-w-3xl {
+  max-width: 48rem;
+}
+.z-50 {
+  z-index: 50;
+}
+.p-4 {
+  padding: 1rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.hover\:bg-gray-700:hover {
+  background-color: #4a5568;
+}
+.block {
+  display: block;
+}
+
